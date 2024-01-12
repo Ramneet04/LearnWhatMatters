@@ -1,13 +1,4 @@
-
-// what and why backend
-// node js install
-// import and export in js
-// run the code
-// npm usage, package
-// express
-// a bit of middlewares
-
-// it a npm package..
+// figlet a npm package..
 // var figlet = require("figlet");
 
 // figlet("Ramneet", function (err, data) {
@@ -51,11 +42,3 @@ app.get("/profile",function(req,res){
 app.listen(3000,()=>{
     console.log("server is listening at : 3000 port no.")
 });
-
-// middleware is a function which gets executes before the route, means if you want to do any task before the route so you can use the middleware.
-
-// if you want to keep track of the hits or any other task before it hit the route.
-
-// so before a route gets executed, so first middleware executes.
-
-// next() =>  their is one problem with middleware that if once the middleware runs so request gets jam so our request will further never reach to route so we need a push called next().
