@@ -38,4 +38,46 @@ if you want to keep track of the hits or any other task before it hit the route.
 <br>
 so before a route gets executed, so first middleware executes.
 <br>
-next() =>  their is one problem with middleware that if once the middleware runs so request gets jam so our request will further never reach to route so we need a push called next().
+<h3>Req, Res, Next</h3>
+1. next() =>  their is one problem with middleware that if once the middleware runs so request gets jam so our request will further never reach to route so we need a push called next(). Control itself will not go to other route or middleware so it needs a push.
+<br>
+<br>
+2. req => user's data who request, like user's location, device, ip address and other things.
+<br>
+<br>
+3. res => server send response what to show when particular url hits. We are server we send what to show to the user when and route Hits. Res has controls on basis of these controls we or server send the response.
+<br>
+<h3>Route Params</h3>
+to make any route dynamic you can use :(name of variable) at the place where you want to make it dynamic, and to access there value use req.params.(name of variable)
+<br>
+<h3>Template Engines</h3>
+style of markup which converts into html.
+<br>
+Ejs is is type of template engines.
+<br>
+Ejs is very very similar to html.
+<br>
+<h3>Ejs</h3>
+1. ejs install => npm i ejs
+<br>
+2. configure ejs => app.set("view engine", "ejs");
+<br>
+3. make folder named views
+<br>
+4. make ejs files
+<br>
+5. render instead of send
+<br>
+<h3>Static Files</h3>
+Setting up the images, stylesheets, frontend js.
+<br>
+1. create a folder called public
+<br>
+2. create three folders inside it images, stylesheets, javascripts
+<br>
+3. configure the express static in index.js file or script.js, (mine is sript2.js)
+<br>
+4. understand the path
+<br>
+<h3>Error Handling</h3>
+learned about how express handle error using app.use method.
