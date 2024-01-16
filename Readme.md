@@ -36,7 +36,7 @@ middleware is a function which gets executes before the route, means if you want
 <br>
 if you want to keep track of the hits or any other task before it hit the route.
 <br>
-so before a route gets executed, so first middleware executes.
+so before a route gets executed, middleware gets executed first.
 <br>
 <h3>Req, Res, Next</h3>
 1. next() =>  their is one problem with middleware that if once the middleware runs so request gets jam so our request will further never reach to route so we need a push called next(). Control itself will not go to other route or middleware so it needs a push.
